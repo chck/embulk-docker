@@ -1,17 +1,16 @@
 IMAGE:=chck/embulk
-TAG:=0.919
+EMBULK_VER:=0.9.23
 
 .PHONY: all
 all: help
 
 .PHONY: build  ## Build image
 build:
-	docker build . -t ${IMAGE}:${TAG} -t ${IMAGE}:latest
+	docker build . -t ${IMAGE}:${EMBULK_VER}
 
 .PHONY: push  ## Push image
 push:
-	docker push $(IMAGE):${TAG}
-	docker push $(IMAGE):latest
+	docker push $(IMAGE):${EMBULK_VER}
 
 .PHONY: help ## View help
 help:
