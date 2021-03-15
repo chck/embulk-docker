@@ -6,7 +6,7 @@ Dockerized Embulk
 
 ## Requirements
 ```
-docker==19.03.*
+docker==20.10.*
 ```
 
 ## Usage
