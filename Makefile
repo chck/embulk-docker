@@ -1,5 +1,5 @@
 IMAGE:=chck/embulk
-EMBULK_VER:=0.9.23
+EMBULK_VER:=0.10.27
 
 .PHONY: all
 all: help
